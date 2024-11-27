@@ -1,0 +1,47 @@
+section{
+    width: 100%;
+}
+section article{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+section img{
+    width: 100%;
+    height: 100%;
+    transition: filter 0.7s ease;
+}
+#multiple{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+#individual{
+    max-height: 50em;
+}
+section div{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+section div a{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 1px solid #e4e4e4;
+    color: #e4e4e4;
+    text-decoration: none;
+    transition: background-color 0.7s ease;
+}
+section div a:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+section img:hover{
+    filter: brightness(0.8);
+}
+@media (max-width: 1100px) {
+    #multiple{
+        grid-template-columns: 50% 50%;
+    }
+}

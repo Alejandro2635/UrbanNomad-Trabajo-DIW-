@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans';
+}
+
+header {
+    width: 100%;
+    z-index: 1;
+    height: 75px;
+    position: fixed;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+header nav {
+    width: 33.3%;
+    height: 100%;
+}
+header #logo {
+    font-size: 25px;
+    width: 33.3%;
+    text-align: center;
+}
+header #logo a {
+    text-decoration: none;
+    color: #0F0F0F;
+}
+header #login {
+    text-align: right; 
+    width: 33.3%;
+    margin-top: 35px;
+    height: 100%;
+}
+header #login a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: #0F0F0F;
+}
+header #login a:hover{
+    text-decoration: underline;
+}
+.barra {
+    width: 5%;
+    height: 5%;
+    position: fixed;
+    transition: .2s all;
+    z-index: 2;
+}
+.barra svg {
+    margin-left: 30px;
+    margin-top: 15px;
+    height: 35px;
+    width: 35px;
+    fill:#0F0F0F;
+}
+.barra:hover svg {
+    padding: 0px;
+    height: 0px;
+}
+.barra h2 {
+    text-align: center;
+    font-size: 0px;
+}
+.barra ul {
+    text-align: center;
+    padding: 0px;
+}
+.barra li {
+    transition: .3s all;
+}
+.barra a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.barra:hover {
+    width: 20%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+.barra:hover h2 {
+    font-size: 35px;
+}
+.barra:hover a {
+    font-size: 20px;
+    color: #0F0F0F;
+    display: block;
+    padding: 20px;
+}
+.barra:hover li {
+    border-top: 1px solid #0F0F0F;
+}
+.barra:hover ul:last-of-type {
+    border-bottom: 1px solid #0F0F0F;
+}
+.barra:hover a:hover {
+    transition: .3s all;
+    font-size: 25px;
+    padding: 30px 0px;
+    background-color: #DDDDDD;
+}
+
+footer{
+    width: 100%;
+}
+aside #descuento{
+    text-align: center;
+    width: 100%;
+    background-color: #0F0F0F;
+    color: #e4e4e4;
+    padding: 5% 0%; 
+}
+footer #descuento h1{
+    font-size: 50px;
+}
+aside #descuento p{
+    font-size: 20px;
+}
+aside #media{
+    width: 100%;
+}
+footer #logos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px 0px;
+}
+footer #logos a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #0F0F0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer #enlaces{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+footer #enlaces a:hover{
+    text-decoration: underline;
+}
+footer #enlaces a{
+    text-decoration: none;
+    color: #0F0F0F;
+}
+footer #copyrigth{
+    width: 100%;
+    background-color: #0F0F0F;
+    color: #e4e4e4;
+    text-align: center;
+}
+footer #copyrigth{
+    padding: 20px 0px;
+}
+footer a svg{
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1100px) {
+    .barra:hover {
+        width: 40%;
+    }
+    header {
+        height: 125px;
+    }
+    header #logo h2{
+        display: none;  
+    }
+    aside #descuento h1{
+        font-size: 15px;
+    }
+    aside #descuento p{
+        font-size: 10px;
+    }
+    .barra:hover a {
+        font-size: 15px;
+        padding: 15px;
+    }
+    .barra:hover a:hover {
+        font-size: 15px;
+        padding: 20px 0px;
+    }
+}

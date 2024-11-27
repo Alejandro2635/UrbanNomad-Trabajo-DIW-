@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URBAN NOMAD</title>
-    <link rel="stylesheet" href="../css/estiloglobal.css" />
-    <link rel="stylesheet" href="../css/index.css">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/estiloglobal.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
 </head>
-
 <body>
     <header>
         <nav>
             <div class="barra">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
                 <h2>
                     MENU
                 </h2>
                 <ul>
-                    <li><a href="index.html">SELECTOR</a></li>
-                    <li><a href="pages/mujer.html">MUJER</a></li>
-                    <li><a href="pages/hombre.html">HOMBRE</a></li>
-                    <li><a href="pages/productos.html">PRODUCTOS</a></li>
-                    <li><a href="pages/login.html">LOGIN</a></li>
+                    <li><a href="../index.html">SELECTOR</a></li>
+                    <li><a href="mujer.html">MUJER</a></li>
+                    <li><a href="hombre.html">HOMBRE</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
                 </ul>
-            </div>
+            </div>   
         </nav>
         <div id="logo">
-            <a href="index.html">
+            <a href="login.html">
                 <h2>URBAN NOMAD</h2>
             </a>
         </div>
         <div id="login">
-            <a href="pages/login.html">LOGIN</a>
+            <a href="login.html">LOGIN</a>
         </div>
     </header>
-    <div id="selector">
-        <div id="mujer">
-            <a href="pages/mujer.html">
-                <img
-                    src="https://static.pullandbear.net/2/static2/itxwebstandard/responsive/genderselector/woman.jpg?20241019022702" />
-                <p>MUJER</p>
-            </a>
-        </div>
-        <div id="hombre">
-            <a href="pages/hombre.html">
-                <img
-                    src="https://static.pullandbear.net/2/static2/itxwebstandard/responsive/genderselector/man.jpg?20241019022702" />
-                <p>HOMBRE</p>
-            </a>
+    <div id="contenedor">
+        <div id="formulario">
+            <div id="contenedor-imagen">
+                <img src="../img/login.jpg">
+            </div>
+            <div id="contenedor-formulario">
+                <form action="../index.html">
+                    <h1>REGISTER</h1>
+                    <input type="text" placeholder="Usuario"/>
+                    <input type="password" placeholder="Contraseña"/>
+                    <input type="password" placeholder="Repetir contraseña"/>
+                    <div id="contenedor-checkbox">
+                        <input type="checkbox" checked/>
+                        <label>Remember me</label>
+                    </div>
+                    
+                    <textarea placeholder=" Descripción"></textarea>
+                    <select>
+                        <option selected>Genero</option>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                    </select>
+                    <input type="submit" value="REGISTRARSE"/>
+                </form>
+            </div>
         </div>
     </div>
     <aside>
@@ -62,7 +69,6 @@
         </div>
     </aside>
     <footer>
-
         <div id="media">
             <div id="logos">
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -91,5 +97,4 @@
         </div>
     </footer>
 </body>
-
 </html>

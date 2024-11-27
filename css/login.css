@@ -1,0 +1,94 @@
+#contenedor{
+    width: 100%;
+    padding: 100px 0px;
+   
+    display: flex;
+    justify-content: center;
+}
+#contenedor #formulario{
+    width: 60%;
+    background-color: #DDDDDD;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 15px #0F0F0F;
+}
+#contenedor-formulario{
+    width: 50%;
+    
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form h1{
+    color: #0F0F0F;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+input[type='text'],input[type='password'],select,textarea{
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 85%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    border: 1px solid #0F0F0F;
+    background-color: rgba(255,255,255,0.5);
+}
+
+#contenedor-checkbox{
+    width: 85%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    gap: 10px;
+    color:#0F0F0F;
+}
+
+input[type='checkbox']{
+    width: 25px;
+    height: 25px;
+}
+input[type='submit']{
+    width: 50%;
+    font-size: 25px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    border: none;
+    background-color: #0074ff;
+    transition: background-color 0.5s ease;
+    color: white;
+    font-weight: bold;
+}
+input[type='submit']:hover{
+    background-color: #005cc8;
+    cursor: pointer;
+}
+
+#contenedor-imagen{
+    width: 50%;
+}
+#contenedor-imagen img{
+    max-width: 99%;
+    height: 100%;
+    margin-bottom: -10px;
+}
+@media (max-width: 700px) {
+    #contenedor #formulario{
+    width: 95%;
+    }
+    #contenedor-imagen{
+        display: none;
+    }
+    #contenedor-formulario{
+        width: 100%;
+    }
+}

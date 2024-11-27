@@ -1,0 +1,49 @@
+header #logo h2{
+    color: #E4E4E4;
+}
+header #login a{
+    color: #E4E4E4;
+}
+.barra svg {
+    fill: #E4E4E4;
+}
+#selector {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#selector #mujer,
+#selector #hombre {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#selector #mujer img,
+#selector #hombre img {
+    width: 100%;
+}
+#selector p {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    font-weight: bold;
+    color: #E4E4E4;
+    font-size: 70px;
+    text-align: center;
+}
+@media (max-width: 1100px) {
+    #selector {
+        height: 130vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    #selector #mujer,
+    #selector #hombre {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+}
