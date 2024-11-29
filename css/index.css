@@ -24,6 +24,12 @@ header #login a{
 #selector #mujer img,
 #selector #hombre img {
     width: 100%;
+    transition: filter 0.7s ease;
+}
+#selector #mujer img:hover,
+#selector #hombre img:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
 }
 #selector p {
     width: 100%;

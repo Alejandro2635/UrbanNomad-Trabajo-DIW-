@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans';
+    box-sizing: border-box;
 }
 
 header {
@@ -63,6 +64,7 @@ header #login a:hover{
 .barra h2 {
     text-align: center;
     font-size: 0px;
+    margin-bottom: 25px;
 }
 .barra ul {
     text-align: center;
@@ -104,10 +106,6 @@ header #login a:hover{
     padding: 30px 0px;
     background-color: #DDDDDD;
 }
-
-footer{
-    width: 100%;
-}
 aside #descuento{
     text-align: center;
     width: 100%;
@@ -115,8 +113,8 @@ aside #descuento{
     color: #e4e4e4;
     padding: 5% 0%; 
 }
-footer #descuento h1{
-    font-size: 50px;
+aside #descuento h1{
+    font-size: 40px;
 }
 aside #descuento p{
     font-size: 20px;
@@ -124,6 +122,10 @@ aside #descuento p{
 aside #media{
     width: 100%;
 }
+footer{
+    width: 100%;
+}
+
 footer #logos{
     width: 100%;
     display: flex;
@@ -139,6 +141,10 @@ footer #logos a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.5s ease;
+}
+footer #logos a:hover{
+    background-color: #DDDDDD;
 }
 footer #enlaces{
     width: 100%;
@@ -183,6 +189,7 @@ footer a svg{
     }
     aside #descuento p{
         font-size: 10px;
+        
     }
     .barra:hover a {
         font-size: 15px;
@@ -191,5 +198,22 @@ footer a svg{
     .barra:hover a:hover {
         font-size: 15px;
         padding: 20px 0px;
+    }
+    footer #logos{
+        margin: 20px 0px;
+    }
+    footer #logos a{
+        width: 35px;
+        height: 35px;
+    }
+    footer #enlaces{
+        gap: 15px;
+    }
+    footer #enlaces a{
+        font-size: 15px;
+    }
+    footer a svg{
+        width: 25px;
+        height: 25px;
     }
 }
